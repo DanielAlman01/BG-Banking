@@ -1,0 +1,240 @@
+:root{
+
+    /* Colores */
+    --colorPrimario:white;
+    --colorSecundario:black;
+    --colorCeleste: #00ABEB;
+    --colorGris: #E7E7E7;
+
+    /* Fuenter */
+    --fuentePrin: Arial, Helvetica, sans-serif;
+
+    /* Negritas */
+    --fuenteRegular: 400;
+    --fuenteNegrita: 900;
+
+    /* tamaños-pc */
+    --fuenteTamanoTitel: 2.3rem;
+    --fuenteTamanoSub: 1.5rem;
+    --fuenteTamanoParrafo: 1.2rem;
+
+    /* tamaño-movil */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+body{
+    margin: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px ;
+    font-size: var(--fuenteTamanoParrafo);
+    font-family: var(--fuentePrin);
+}
+
+.color_blanco{
+    color: var(--colorPrimario);
+}
+
+h1{
+    font-family: var(--fuentePrin);
+    font-size: var(--fuenteTamanoTitel);
+    margin: 0;
+    font-weight: var(--fuenteRegular);
+}
+
+h2{
+    font-family: var(--fuentePrin);
+    font-size: var(--fuenteTamanoSub);
+    margin: 0;
+    font-weight: var(--fuenteRegular);
+}
+
+p{
+    font-family: var(--fuentePrin);
+    font-size: var(--fuenteTamanoParrafo);
+    margin: 0;
+    font-weight: var(--fuenteRegular);
+}
+
+#nombrePropietario{
+    font-weight: 600;
+}
+
+/* Nav menu */
+
+.nav_conten{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.nav_element{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 30px;
+}
+
+.separacion{
+    background-color: var(--colorSecundario);
+    width: 1.5px;
+    height: 100%;
+}
+.activo{
+    background-color: var(--colorCeleste) !important;
+    color: var(--colorPrimario);
+    border-radius: 8px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.activo:hover{
+    background-color: var(--colorSecundario) !important;
+    transition: 0.4s;
+}
+
+.nav_btn-element{
+    border: none;
+    font-size: var(--fuenteTamanoParrafo);
+    font-family: var(--fuentePrin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav_btn{
+    padding: 15px;
+    background-color: var(--colorCeleste);
+}
+
+/* Block */
+
+.block{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.block-color_black{
+    background-color: var(--colorSecundario);
+}
+
+.block-space{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block_element-cuenta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 60px;
+    gap: 60px;
+}
+
+.block_element-cuentaTab{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 60px 120px;
+    gap: 60px;
+}
+
+.block_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--colorSecundario);
+    align-items: start;
+    padding: 40px;
+    gap: 60px;
+    border-radius: 10px;
+}
+
+.block_element-nombre{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagenes */
+
+.img-logo{
+    width: 160px;
+}
+
+/* buttom */
+
+.btn_black{
+    color: var(--colorPrimario);
+    background-color: var(--colorSecundario);
+    padding: 18px 40px;
+    font-size: var(--fuenteTamanoSub);
+    font-family: var(--fuentePrin);
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn_black:hover{
+    color: var(--colorSecundario);
+    background-color: var(--colorPrimario);
+    transition: 0.4s;
+}
+
+/* Saldo y cuenta */
+
+.cont-table{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.table_prin{
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--colorSecundario);
+}
+
+.table_prin-element{
+    border: 1px solid var(--colorSecundario);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.table_prin-tb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table_inter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
